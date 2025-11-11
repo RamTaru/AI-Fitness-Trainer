@@ -1,0 +1,277 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Workout Animation Keyframes */
+@keyframes pushup {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+@keyframes squat {
+  0%, 100% { transform: translateY(0) scaleY(1); }
+  50% { transform: translateY(12px) scaleY(0.8); }
+}
+
+@keyframes plank {
+  0%, 100% { transform: translateY(0); }
+  25%, 75% { transform: translateY(-2px); }
+  50% { transform: translateY(2px); }
+}
+
+@keyframes jumping-jack {
+  0%, 100% { 
+    transform: translateY(0);
+  }
+  50% { 
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes mountain-climber {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+@keyframes lunge {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(8px) translateX(-4px); }
+}
+
+/* Animation Classes */
+.animate-pushup {
+  animation: pushup 2s ease-in-out infinite;
+}
+
+.animate-squat {
+  animation: squat 2s ease-in-out infinite;
+}
+
+.animate-plank {
+  animation: plank 3s ease-in-out infinite;
+}
+
+.animate-jumping-jack {
+  animation: jumping-jack 1s ease-in-out infinite;
+}
+
+.animate-mountain-climber {
+  animation: mountain-climber 1s ease-in-out infinite;
+}
+
+.animate-lunge {
+  animation: lunge 2s ease-in-out infinite;
+}
+
+/* 3D Animation Keyframes */
+@keyframes pushup-3d {
+  0%, 100% { 
+    transform: translateY(0) rotateX(0deg) scale(1);
+    filter: brightness(1);
+  }
+  50% { 
+    transform: translateY(8px) rotateX(5deg) scale(1.02);
+    filter: brightness(1.1);
+  }
+}
+
+@keyframes squat-3d {
+  0%, 100% { 
+    transform: translateY(0) scaleY(1) rotateX(0deg);
+    filter: brightness(1);
+  }
+  50% { 
+    transform: translateY(12px) scaleY(0.8) rotateX(3deg);
+    filter: brightness(1.1);
+  }
+}
+
+@keyframes plank-3d {
+  0%, 100% { 
+    transform: translateY(0) rotateX(0deg);
+    filter: brightness(1);
+  }
+  25%, 75% { 
+    transform: translateY(-2px) rotateX(2deg);
+    filter: brightness(1.05);
+  }
+  50% { 
+    transform: translateY(2px) rotateX(-1deg);
+    filter: brightness(1.1);
+  }
+}
+
+@keyframes burpee-3d {
+  0%, 100% { 
+    transform: translateY(0) scale(1) rotateX(0deg);
+    filter: brightness(1);
+  }
+  25% { 
+    transform: translateY(8px) scale(0.9) rotateX(5deg);
+    filter: brightness(1.1);
+  }
+  50% { 
+    transform: translateY(-12px) scale(1.1) rotateX(-3deg);
+    filter: brightness(1.2);
+  }
+  75% { 
+    transform: translateY(4px) scale(0.95) rotateX(2deg);
+    filter: brightness(1.05);
+  }
+}
+
+@keyframes deadlift-3d {
+  0%, 100% { 
+    transform: translateY(0) rotateX(0deg) scale(1);
+    filter: brightness(1);
+  }
+  50% { 
+    transform: translateY(-6px) rotateX(8deg) scale(1.05);
+    filter: brightness(1.15);
+  }
+}
+
+@keyframes bench-3d {
+  0%, 100% { 
+    transform: translateY(0) rotateX(0deg);
+    filter: brightness(1);
+  }
+  50% { 
+    transform: translateY(-4px) rotateX(3deg);
+    filter: brightness(1.1);
+  }
+}
+
+@keyframes pullup-3d {
+  0%, 100% { 
+    transform: translateY(8px) rotateX(0deg);
+    filter: brightness(1);
+  }
+  50% { 
+    transform: translateY(-8px) rotateX(5deg);
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes bicep-3d {
+  0%, 100% { 
+    transform: rotateX(0deg) scale(1);
+    filter: brightness(1);
+  }
+  50% { 
+    transform: rotateX(5deg) scale(1.05);
+    filter: brightness(1.1);
+  }
+}
+
+@keyframes shoulder-3d {
+  0%, 100% { 
+    transform: translateY(0) rotateX(0deg);
+    filter: brightness(1);
+  }
+  50% { 
+    transform: translateY(-6px) rotateX(8deg);
+    filter: brightness(1.15);
+  }
+}
+
+@keyframes jumping-jack-3d {
+  0%, 100% { 
+    transform: translateY(0) scale(1) rotateX(0deg);
+    filter: brightness(1);
+  }
+  50% { 
+    transform: translateY(-10px) scale(1.1) rotateX(3deg);
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes mountain-climber-3d {
+  0%, 100% { 
+    transform: translateX(0) rotateY(0deg);
+    filter: brightness(1);
+  }
+  25% { 
+    transform: translateX(-4px) rotateY(-2deg);
+    filter: brightness(1.05);
+  }
+  75% { 
+    transform: translateX(4px) rotateY(2deg);
+    filter: brightness(1.1);
+  }
+}
+
+@keyframes lunge-3d {
+  0%, 100% { 
+    transform: translateY(0) translateX(0) rotateX(0deg);
+    filter: brightness(1);
+  }
+  50% { 
+    transform: translateY(8px) translateX(-4px) rotateX(5deg);
+    filter: brightness(1.1);
+  }
+}
+
+/* 3D Animation Classes */
+.animate-pushup-3d {
+  animation: pushup-3d 2s ease-in-out infinite;
+}
+
+.animate-squat-3d {
+  animation: squat-3d 2s ease-in-out infinite;
+}
+
+.animate-plank-3d {
+  animation: plank-3d 3s ease-in-out infinite;
+}
+
+.animate-burpee-3d {
+  animation: burpee-3d 3s ease-in-out infinite;
+}
+
+.animate-deadlift-3d {
+  animation: deadlift-3d 2.5s ease-in-out infinite;
+}
+
+.animate-bench-3d {
+  animation: bench-3d 2s ease-in-out infinite;
+}
+
+.animate-pullup-3d {
+  animation: pullup-3d 2.5s ease-in-out infinite;
+}
+
+.animate-bicep-3d {
+  animation: bicep-3d 1.5s ease-in-out infinite;
+}
+
+.animate-shoulder-3d {
+  animation: shoulder-3d 2s ease-in-out infinite;
+}
+
+.animate-jumping-jack-3d {
+  animation: jumping-jack-3d 1s ease-in-out infinite;
+}
+
+.animate-mountain-climber-3d {
+  animation: mountain-climber-3d 1s ease-in-out infinite;
+}
+
+.animate-lunge-3d {
+  animation: lunge-3d 2s ease-in-out infinite;
+}
+
+/* 3D Perspective Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-gpu {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.rotate-x-15 {
+  transform: rotateX(15deg);
+}
